@@ -19,4 +19,6 @@ if ( process.env.NODE_ENV === 'dev' )
 else
 	urlDB = process.env.MONGO_URI;
 
+//Se modificó variable de conexión para que no sea visible en github
+
 process.env.URLDB = urlDB;
