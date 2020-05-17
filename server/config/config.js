@@ -30,12 +30,12 @@ if ( process.env.NODE_ENV === 'dev' )
 else
 	urlDB = process.env.MONGO_URI;
 
+//Se modificó variable de conexión para que no sea visible en github
+
+process.env.URLDB = urlDB;
+
 // ============================
 //  Google client ID
 // ============================
 
 process.env.CLIENT_ID = process.env.CLIENT_ID || '16036579921-gg7f5qe3r265qbtlvcihookhpau3dfs4.apps.googleusercontent.com';
-
-//Se modificó variable de conexión para que no sea visible en github
-
-process.env.URLDB = urlDB;
